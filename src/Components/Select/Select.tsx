@@ -1,6 +1,7 @@
 import React from "react";
 import Select, { Option } from "rc-select";
-
+import "./Styles.scss";
+import "rc-select/assets/index.less";
 interface Option {
   value: string;
   title: string;

@@ -1,5 +1,5 @@
 import React from "react";
-import SelectComponent from "../src/Components/Select";
+import SelectComponent from "../src/Components/Select/Select";
 
 export default function MyApp() {
   const options = [

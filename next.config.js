@@ -1,7 +1,9 @@
 const cssLoaderConfig = require("@zeit/next-css/css-loader-config");
+const withSass = require("@zeit/next-sass");
+// const withLess = require("@zeit/next-less");
 
-module.exports = (nextConfig = {}) => {
-  return Object.assign({}, nextConfig, {
+module.exports = module.exports = (nextConfig = {}) => {
+  return Object.assign({}, withSass(), nextConfig, {
     webpack(config, options) {
       if (!options.defaultLoaders) {
         throw new Error(

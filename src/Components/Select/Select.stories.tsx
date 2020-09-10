@@ -1,7 +1,5 @@
 import React from "react";
-import SelectComponent from "../src/Components/Select";
-import "../src/Components/Styles.scss";
-import "rc-select/assets/index.less";
+import SelectComponent from "./Select";
 
 export default {
   title: "Select",
