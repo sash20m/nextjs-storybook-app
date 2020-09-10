@@ -1,0 +1,56 @@
+@import './normalize', './helpers', './media-queries', './palette', './typography';
+
+// @include mq-show-breakpoints;
+
+html,
+body {
+  display: block;
+  font-size: rem(16px);
+  @include fontMedium;
+
+  @include mq($until: wide) {
+    font-size: rem(15px);
+  }
+
+  @include mq($until: desktop) {
+    font-size: rem(14px);
+  }
+
+  @include mq($until: small-desktop) {
+    font-size: rem(13px);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: rem(98px);
+}
+
+h2 {
+  font-size: rem(29px);
+}
+
+p {
+  line-height: 1.5;
+}
+
+.grey {
+  color: #ccc;
+}
+
+a {
+  text-decoration: none;
+}
